@@ -1,0 +1,70 @@
+<style>
+  .navbar {
+    background-color: #007bff;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px; /* reduced from 64px */
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo img {
+    height: 36px; /* reduced from 50px */
+    width: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 6px 12px; /* slightly smaller padding */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    text-decoration: none;
+  }
+
+  @media (max-width: 600px) {
+    .nav-links {
+      gap: 10px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      padding: 5px 8px;
+    }
+
+    .nav-logo img {
+      height: 30px;
+    }
+  }
+</style>
+
+<div class="navbar">
+  <div class="nav-logo">
+    <img src="authentication.jpg" alt="Walmart Logo" />
+  </div>
+  <div class="nav-links">
+    <% if (!isLoggedIn) { %>
+     <a href="/signup">Sign Up</a>
+     <a href="/login">Login</a>
+    <% } else { %>
+     <a href="/logout">Logout</a>
+    <% } %>
+  </div>
+</div>

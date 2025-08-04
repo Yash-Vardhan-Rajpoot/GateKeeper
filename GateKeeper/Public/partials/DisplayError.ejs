@@ -1,0 +1,10 @@
+<% if(errors.length != 0){ %>
+    <div class="alert" role="alert">
+        <strong>Error!</strong>
+        <ul>
+            <% errors.forEach((err) => { %>
+                <li><%= typeof err === 'string' ? err : err.msg %></li>
+            <% }); %>
+        </ul>
+    </div>
+<% } %>
