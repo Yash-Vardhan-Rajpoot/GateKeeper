@@ -27,7 +27,7 @@ function Login() {
             return handleError('email and password are required')
         }
         try {
-            const url = `https://deploy-mern-app-1-api.vercel.app/auth/login`;
+            const url = `https://gate-keeper-nine.vercel.app/auth/login`;
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
@@ -91,3 +91,4 @@ function Login() {
 }
 
 export default Login
+
