@@ -27,7 +27,7 @@ function Signup() {
             return handleError('name, email and password are required')
         }
         try {
-            const url = `https://gate-keeper-nine.vercel.app/auth/signup`;
+            const url = `https://gate-keeper-yash-vardhan-rajpoots-projects.vercel.app/auth/signup`;
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
@@ -99,4 +99,5 @@ function Signup() {
 }
 
 export default Signup
+
 
