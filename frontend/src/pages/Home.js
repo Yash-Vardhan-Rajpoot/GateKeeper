@@ -22,7 +22,7 @@ function Home() {
 
     const fetchProducts = async () => {
         try {
-            const url = "https://gate-keeper-nine.vercel.app/products";
+            const url = "https://gate-keeper-yash-vardhan-rajpoots-projects.vercel.app/products";
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -59,4 +59,5 @@ function Home() {
 }
 
 export default Home
+
 
